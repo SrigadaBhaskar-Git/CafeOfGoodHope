@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div class="card bg-dark text-white">
+    <img src="./assets/logos/lamp bg.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay text-center">
+      <button type="button" class="btn btn-primary ps-5 pe-5 pt-2 pb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+       Sign-in
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-primary" id="exampleModalLabel">login</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form #ref="ngForm" (ngSubmit)="sendData(ref)">
+              <div class="modal-body">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-primary text-start"><i class="fa fa-envelope" aria-hidden="true"></i> Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com" ngModel>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-primary"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password</label>
+                    <input type="password" class="form-control" id="exampleFormControlInput1" name="password" placeholder="Enter your password" ngModel>
+                  </div>
+                  <div class="forget">
+                    <a href="" class="">forgot password</a>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <input type="reset" class="btn btn-primary" value="reset">
+                <button type="submit" class="btn btn-primary" onclick="submit()">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

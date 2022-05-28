@@ -1,0 +1,23 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-image:url(../assets/images/bg2.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+
+}
+.navbar{
+    color: blue;
+} 
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav-item:hover{
+   color:firebrick;
+}
+.orange{
+    color:orangered;
+}
+.link-bg:active{
+    background-color: rgb(46, 204, 231);
+}

@@ -1,0 +1,13 @@
+.btn{
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+body{
+    background-image: url(../../assets/cafephotos/registration.jpg);
+    background-size: cover;
+    background: image opacity 0.5; 
+}
+.form-label, .form-check-label{
+    color:rgb(0, 1, 12);
+    /* font-weight: bold; */
+}

@@ -1,0 +1,18 @@
+body{
+    background-image: url(../../assets/cafephotos/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+textarea{
+    height: 100px;
+    resize: none;
+    /* width: 100%;
+    border-radius: 5px;
+    border: none;
+    text-align: center; */
+}
+img{
+    border-radius: 50%;
+    width: 35px;
+}

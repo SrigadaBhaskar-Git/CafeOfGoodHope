@@ -1,0 +1,16 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+footer{
+    background-image: url();
+}
+img{
+    width: 45px;
+    height: 45px;
+}
+img:hover{
+    transform: rotate(-40deg);
+}
+.text-decoration-underline{
+    color: crimson;
+}

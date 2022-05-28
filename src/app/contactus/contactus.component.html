@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="container text-center pt-2">
+        <h3>Hello.... my dear family.... <img src="./assets/images/loveemoji.png" alt="love emoji">
+        </h3>
+        <p>If u have any query or want to give feedback please reach us on <a href="mailto:cafeof.goodhope@gmail.com">cafeof.goodhope@gmail.com</a></p>
+        <p class="text-center">OR</p><hr><p>find below to reach us......</p>
+        <hr>
+    </div>
+    <form>
+        <div class="row container-fluid">
+          <div class="col-4"></div>
+          <div class="col-lg-4">
+              <form #ref="ngForm" (ngSubmit)="sendData(ref)">
+                <div class="mb-2">
+                  <label for="name" class="form-label"><i class="fa fa-user" aria-hidden="true"></i> Name:</label>
+                  <input type="text" class="form-control" id="firstname" name="name" placeholder="Enter your Name" ngModel>
+                </div>
+                <div class="mb-2">
+                  <label for="email" class="form-label"><i class="fa fa-envelope" aria-hidden="true"></i> Email address:</label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" ngModel>
+                </div>
+                <div class="mb-2">
+                  <label for="number" class="form-label"><i class="fa fa-phone" aria-hidden="true"></i> Contact Number:</label>
+                  <input type="number" class="form-control" id="number" name="contact" placeholder="Enter your contact number" ngModel>
+                </div>
+                <div>Select your gender:</div>
+                <div class="gender">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" ngModel>
+                    <label class="form-check-label" for="gender"><i class="fa fa-male" aria-hidden="true"></i> Male</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female" ngModel>
+                    <label class="form-check-label" for="gender"><i class="fa fa-female" aria-hidden="true"></i> Female</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="others" value="Others" ngModel>
+                    <label class="form-check-label" for="gender"><i class="fa fa-transgender" aria-hidden="true"></i> Others</label>
+                  </div>
+                  <div class="mb-2">
+                    <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-commenting" aria-hidden="true"></i> Leave your message:</label>
+                    <textarea class="form-control" placeholder="Leave a comment here" name="message" id="floatingTextarea" ngModel></textarea>
+                </div>
+                </div>
+                <div class="buttons pb-2">
+                  <!-- <input type="reset" class="btn btn-primary rounded-pill" value="reset"> -->
+                  <button type="submit" class="btn btn-outline-warning rounded-pill w-100 fs-3">submit</button>
+                </div>
+              </form>
+          </div>
+          <!-- <div class="col-4"></div> -->
+        </div>
+      </form>
+</body>
+</html>

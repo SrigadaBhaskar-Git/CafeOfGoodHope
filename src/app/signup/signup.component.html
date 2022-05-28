@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="row container-fluid">
+    <div class="col-4"></div>
+    <div class="col-lg-4 text-light">
+        <form #ref="ngForm" (ngSubmit)="sendData(ref)">
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-user" aria-hidden="true"></i> First Name:</label>
+            <input type="text" class="form-control bg-dark text-light" name="fname" id="firstname" placeholder="Enter your First Name" required ngModel>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-user-o" aria-hidden="true"></i> Last Name:</label>
+            <input type="text" class="form-control bg-dark text-light" name="lname" id="lastname" placeholder="Enter your Last Name" required ngModel>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-envelope" aria-hidden="true"></i> Email address:</label>
+            <input type="email" class="form-control bg-dark text-light" name="email" id="email" placeholder="name@example.com" required ngModel>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-phone" aria-hidden="true"></i> Contact Number:</label>
+            <input type="number" class="form-control bg-dark text-light" name="number" id="number" placeholder="Enter your contact number" required ngModel>
+          </div>
+          <div class="form-label">Select your gender:</div>
+          <div class="gender">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input bg-dark text-light" type="radio" name="gender" id="inlineRadio1" value="male" required ngModel>
+              <label class="form-check-label" for="inlineRadio1"><i class="fa fa-male" aria-hidden="true"></i> Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input bg-dark text-light" type="radio" name="gender" id="inlineRadio2" value="female" required ngModel>
+              <label class="form-check-label" for="inlineRadio2"><i class="fa fa-female" aria-hidden="true"></i> Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input bg-dark text-light" type="radio" name="gender" id="inlineRadio3" value="others" required ngModel>
+              <label class="form-check-label" for="inlineRadio3"><i class="fa fa-transgender" aria-hidden="true"></i> Others</label>
+            </div>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password:</label>
+            <input type="password" name="password" class="form-control bg-dark text-light" id="exampleFormControlInput1" placeholder="Set your password" required ngModel>
+          </div>
+          <div class="mb-2">
+            <label for="exampleFormControlInput1" class="form-label"><i class="fa fa-unlock-alt" aria-hidden="true"></i> Confirm your Password:</label>
+            <input type="password" name="Confirm-Password" class="form-control bg-dark text-light" id="exampleFormControlInput2" placeholder="Re-enter your password" required ngModel>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input bg-dark text-light" type="checkbox" value="" name="fromcheck" id="flexCheckDefault" required ngModel>
+            <label class="form-check-label" for="flexCheckDefault">
+              <a routerLink="">please read the terms and conditions</a>
+            </label>
+          </div>
+          <div class="buttons pb-2">
+            <input type="reset" class="btn btn-primary"  value="reset">
+            <button type="submit" class="btn btn-primary">submit</button>
+          </div>
+        </form>
+    </div>
+    <!-- <div class="col-4"></div> -->
+  </div>
+</body>
+</html>

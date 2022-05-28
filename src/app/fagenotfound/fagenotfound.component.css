@@ -1,0 +1,16 @@
+img{
+    height: 550px;
+    width: 100%;
+}
+.card-img-overlay{
+    height: 550px;
+    width:55%;
+    margin-left: 40%;
+    padding-top: 15%;
+}
+.card-title{
+    font-size:70px;
+}
+h2{
+    color: rgba(255, 0, 0, 0.753);
+}

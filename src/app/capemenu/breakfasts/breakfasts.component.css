@@ -1,0 +1,18 @@
+.card{
+    background-color:lightgrey;
+}
+.card:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 10px 20px greenyellow;
+    
+}
+.logo{
+    width: 45px;
+    height: 45px;
+}
+.logo:hover{
+    transform: rotate(-40deg);
+}
+.text-decoration-underline{
+    color: crimson;
+}

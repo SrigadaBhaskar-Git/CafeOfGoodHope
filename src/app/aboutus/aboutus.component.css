@@ -1,0 +1,31 @@
+.text{
+    color: rgb(243, 247, 243);
+    font-weight: bolder;
+    font-size: 50px;
+}
+.carousel-inner{
+    border-radius: 35%;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: crimson;
+    background-color: aqua;
+}
+h1:hover{
+    transform: scale(1.5);
+}
+.card:hover{
+    transform:scale(0.9);
+    box-shadow: -5px -10px 10px black;
+}
+/* .carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: black;
+    opacity: 0.5;
+} */
